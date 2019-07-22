@@ -1,0 +1,12 @@
+Variables numericas: precio, IVA;
+
+Inicio
+    Escribir "Introduzca el precio";
+    Leer precio;
+    Escribir "Introduzca IVA";
+    leer iva
+    importe=precio*1.16;
+    Escribir "El precio final es:";
+    Escribir importe;
+
+Fin

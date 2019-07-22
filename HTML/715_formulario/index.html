@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="150754.css">
+</head>
+<body>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li >Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+        </ul>
+    </nav>
+    <script src="miCodigo.js"></script>
+
+
+    <h1>Oferta de trabajo/Alta</h1>
+    <form action="">
+        <fieldset>
+            <legend>
+                Datos del puesto
+            </legend>
+            <div>
+            <label>Nombre del puesto</label>
+                <select name="Puesto">
+                    
+                        <option value="Senior">Senior</option>
+                        <option value="Back">Back PHP</option>
+                        <option value="NodeJS">NodeJs</option>
+                        <option value="Java">Java</option>
+                        <option value="Web">Web</option>
+                        <option value="Angular">Angular</option>
+                </select>
+            </div>
+            
+            <div>
+            <label>Pais</label>
+                <select id="Pais">
+                    <option value="España">España</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="Italia">Italia</option>
+                </select>
+            </div>
+            
+            
+            <article>
+                    <label>Ciudad</label><br>
+                    <input list="ciudad" name="ciudad">
+                    <datalist id="ciudad">
+                        <option value="mad">Madrid</option>
+                        <option value="ss">San Sebastian</option>
+                        <option value="roma">Roma</option>
+                        <option value="milan">Milan</option>
+                        <option value="new-york">New York</option>
+                        <option value="chi">Chicago</option>
+                    <!-- </datalist> -->
+            </article>
+            
+            <article>
+                <p>Tipo</p>
+                <select name="" id="">
+                    <option value="">Content</option>
+                    <option value="">DevOps</option>
+                    <option value="">Software</option>
+                    <option value="">Agile</option>
+                    <option value="">User</option>
+                </select>
+            </article>
+            <article>Tipo <br>
+                <input type="text">
+            </article>
+            
+            
+
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Datos Personales del candidato</legend>
+            <input type="radio" name="male" value="Sr">Sr
+            <input type="radio" name="female" value="Sra">Sra<br>
+        <label for="">Nombre</label><br>
+    
+            <input type="text" name="Nombre" value="Nombre" ><br>
+        Apellidos<br>
+            <input type="text" name="Ciudad" value="Apellidos" ><br>
+            <article>
+                <label for="">Fecha de nacimiento</label>
+                <input type="date">
+            </article>
+            <label for="">Correo</label>
+            <input type="e-mail" name="correo"   value="example@mail.com">
+            <label for="">URL - repositorio</label>
+            <input type="url" value="http://github.com">
+            <label for="">telefono</label>
+            <input type="text" value="600 000 000">
+            <label for="">Años de experiencia</label>
+            <input type="number">
+            <article>
+                <label for="">Rango salarial deseado</label>
+                <input type="range" name="numPasos" list="tickmarks">
+                <datalist id="tickmarks">
+                    <option value="0" label="0"></option>
+                    <option value="50000" label="50000"></option>
+                    <option value="100000" label="100000"></option>
+                </datalist>
+            </article>
+            <article>
+                <label for="">Fecha maxima de incorporacion</label>
+                <input type="date">
+            </article>
+
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>

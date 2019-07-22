@@ -1,0 +1,13 @@
+1: Crea un programa que pida al usuario una contraseña, de forma repetitiva mientras que
+no introduzca "1234". Cuando finalmente escriba la contraseña correcta, se le dirá
+"Bienvenido".
+
+Variables texto; password;
+Inicio
+    Escribir "Escriba una contraseña";
+    Leer password;
+        MIENTRAS password <> 1234 HACER;
+        Escribir "Contraseña Incorrecta";
+        FIN_MIENTRAS;
+    ESCRIBIR "Contraseña Correcta. Bienvenido";
+Fin

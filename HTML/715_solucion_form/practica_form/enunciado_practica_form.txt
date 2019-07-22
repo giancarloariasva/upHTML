@@ -1,0 +1,14 @@
+﻿Práctica formularios
+----
+
+Simplemente, queremos simular y aprender cómo podríamos desarrollar ciertas zonas profesionales de una aplicación para optar a un trabajo en una empresa.
+
+Por lo que en esta primera práctica vamos a ver si realizamos el diseño, únicamente estructural, del formulario de registro de alta en un sistema de empleo.
+
+Nuestro formulario tendrá que cumplir símplemente su parte funcional con lo visto en clase, pero si os animáis a ir dando algún estilo CSS sencillito, sentíos libres para ello.
+No es necesario que quede exactamente igual que las fotos que os he pasado. Sólo lo básico de forms.
+
+Adjunto os paso varias imágenes de diseño del formulario y cómo sería cada desplegable de opciones. Fijaos bien en los campos remarcados en rojo. Estos quiere decir que son
+obligatorios.
+
+Suerte!

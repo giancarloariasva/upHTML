@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{display:none;}
+        .menuRojo{
+            color:red;
+        }
+        .menuAzul{color:blue}
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <h2 class="menu" onclick="saludar()">Menu</h2>
+    <nav>
+        <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+        </ul>
+    </nav>
+    </div>
+    <script src="./miCodigo.js"></script>
+    <script>
+        var menu = document.querySelector('.menu')
+        var listado = document.querySelector('ul')
+        menu.addEventListener('mouseenter', function(){
+            listado.style='display:block'
+            //para que cambie de color el menu pero tiene que poner el estilo adecuado
+            /* console.log('holita')
+            if (menu.className==='') {
+                menu.className='menuRojo'
+            } else if(menu.className=='menuRojo'){
+                menu.className='menuAzul'
+            } else {
+                menu.className=''
+            } */
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+Variables Numericas: opcion;
+VAriables Texto: Libro;
+Seleccionar un libro
+
+Inicio
+    Escribrir "Introduzca una opción";
+    Leer opcion;
+    SI opcion=0 ENTONCES Libro="El Quijote"; FINALSI;
+    SI opcion=1 ENTONCES Libro="La Biblia"; FINALSI;
+    SI opcion=2 ENTONCES Libro="El Codigo Davinci"; SINO "No existe libro"; FINALSI;
+    Escribrir "Libro seleccionado: " + Libro + "Disfrute su lectura."   
+Fin

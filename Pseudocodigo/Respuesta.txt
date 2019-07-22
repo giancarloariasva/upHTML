@@ -1,0 +1,27 @@
+Ejemplo Libro
+
+Variables Numericas: id_libro;
+INICIO
+    ESCRIBIR "Introduzca id libro"
+    Leer id_libro
+    SI 0 <= id_libro <= 3:
+        Si id_libro = $ ENTONCES:
+            Escribir "Obra: El Quijote"
+        FINSI
+        Si id_libro = $ ENTONCES:
+            Escribir "Obra: El Quijote"
+        FINSI
+        Si id_libro = $ ENTONCES:
+            Escribir "Obra: El Quijote"
+            SINO:
+                ESCRIBIR "Obra no encontrada"
+    FINSI
+FIN
+---
+Ejemplo comparar números, devolver el mayor
+Variables numericas: n1, n2, n3;
+INICIO
+    ESCRIBIR "Introduzca n1"
+    LEER n1,n2,n3
+    
+FIN

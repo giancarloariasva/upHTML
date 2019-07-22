@@ -1,0 +1,2 @@
+1: Crea un programa que pida al usuario un código de usuario y una contraseña. Deberá repetirse hasta que el código sea "1" y la contraseña sea "1234".
+

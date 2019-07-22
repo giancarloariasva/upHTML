@@ -1,0 +1,61 @@
+Un programa que mostrase los números del 1 al 10
+
+Inicio
+    Para x <- 1 Hasta 10
+        Hacer
+            Escribir x;
+    Fin_Para    
+Fin
+
+Inicio
+    Para x <- 10 Hasta 20 Con Paso 2 Hacer
+        Escribir x;
+    Fin_Para
+Fin
+
+1: Crea un programa que escriba los números del 5 al 15, ambos incluidos.
+
+Inicio
+    PARA x <- 5 HASTA 15;
+        HACER
+            ESCRIBIR x;
+    FIN_PARA
+Fin
+
+2: Crea un programa que escriba los múltiplos del 3, desde el 3 hasta el 30,
+usando un paso de tamaño 3.
+
+Inicio
+    PARA x <- 3 HASTA 30; CON PASO 3;
+        HACER
+            ESCRIBIR x;
+    FIN_PARA
+Fin
+
+Inicio
+    PARA x <- 1 HASTA 10;
+        HACER
+            ESCRIBIR x*3;
+    FIN_PARA
+Fin
+
+3: Crea un programa que escriba los números del 20 al 10.
+
+Inicio
+    PARA x <- 20 HASTA 10 CON PASO -1
+        HACER
+            ESCRIBIR x;
+    FIN_PARA
+Fin
+
+4: Crea un programa que escriba la tabla de multiplicar del 5 (hasta el 10).
+
+Inicio
+    PARA x <- 5 HASTA 10;
+        HACER
+            PARA y <- 1 HASTA 10; //TABLA ESPAÑOLA
+                HACER
+                    x*y;
+            FIN_PARA
+    FIN_PARA
+Fin

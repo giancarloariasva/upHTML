@@ -1,0 +1,185 @@
+Ejemplo
+
+numero1 = 5;
+numero2 = 9;
+FUNCION suma(num1,num2)
+    Inicio
+    resultado = num1 + num2;
+    Escribe "El resultado es ", resultado;
+    FinFuncion
+
+Para "llamar" o "invocar" a la función dentro del programa, sólo tendremos
+que escribir su nombre de la siguiente forma:
+
+suma(numero1, numero2);
+suma (3,7);
+-----
+1. Pseudocódigo para un programa que nos sume dos número introducidos por el teclado:
+Inicio
+    ESCRIBIR "Introduzca 2 números";
+    LEER n1, n2;
+    FUNCION suma(n1, n2)
+        INICIO
+        resultado = n1 + n2;
+        Escribe "El resultado es ", resultado;
+    FINFUNCION
+Fin
+-----
+2. Pseudocódigo para un programa que nos diga la tabla de multiplicar del número que le
+digamos (introducido por el teclado).
+Inicio    
+    ESCRIBIR "Introduzca un núm";
+    LEER num;
+    FUNCION tabla(num)
+        INICIO
+        PARA x <- 1 HASTA 10;
+            HACER
+                x*5;
+        FIN_PARA
+    FIN_FUNCION
+Fin
+-----
+3. Escribir un Pseudocódigo de un programa que permita leer la edad y peso de una persona y posteriormente imprimirla.
+
+Inicio
+    ESCRIBIR "Introduzca su edad y peso"
+    LEER edad, peso;
+    FUNCION informacion(edad, peso)
+        INICIO
+        ESCRIBIR "Su edad es: " + edad + " y su peso es: " + peso
+    FIN_FUNCION
+Fin
+-----
+4. Escribir Pseudocódigo de un programa principal, y sus funciones necesarias, que ofrezca
+tres opciones de cálculo:
+el área de un círculo → r2*Pi.
+el área de un triángulo →(b*a)/2
+el volumen de un cilindro, conocidos su altura y diámetro. → R = D/2 ; V = Pi * (R2 * H)
+y entregue su resultado.
+
+Inicio
+    Escribir "Introduzca figura a calcular";
+    Leer figura;
+    FUNCION tipo_figura(figura)
+        INICIO
+            SI figura=="circulo"; ENTONCES
+                ESCRIBIR "Introduzca radio"
+                LEER radio_circulo;
+                ESCRIBIR "el área es " + (radio_circulo^2)*Pi
+                SI figura=="triangulo"; ENTONCES
+                    ESCRIBIR "Introduzca dos base y altura";
+                    LEER base_triangulo, altura_triangulo;
+                    ESCRIBIR "el área es " + (altura_triangulo*base_triangulo)/2
+                    ELSE
+                        ESCRIBIR "Introduzca radio y altura";
+                            LEER diametro_cilindro, altura_cilindro;
+                        ESCRIBIR "El volumen es: " + Pi*((diametro_cilindro)^2)*altura_cilindro)
+                FIN_SI
+            FIN_SI
+    FIN_FUNCION
+Fin
+
+Inicio
+    Escribir "Introduzca figura a calcular";
+    Leer figura;
+        FUNCION area_circulo(radio)
+            INICIO
+            resultado=(radio^2)*Pi;
+            ESCRIBIR "el resultado es" + resultado;
+        FIN_FUNCION
+        FUNCION area_triangulo(base, altura)
+            INICIO
+            resultado=(base*altura)/2;
+            ESCRIBIR "el resultado es" + resultado;
+        FIN_FUNCION
+        FUNCION volumen_cilindro(diametro, altura)
+            INICIO
+            resultado=Pi*((diametro_cilindro)^2)*altura_cilindro);
+            ESCRIBIR "el resultado es" + resultado;
+        FIN_FUNCION
+        FUNCION tipo_figura(figura)
+            INICIO
+            SI opcion=1 ENTONCES 
+                ESCRIBIR "Introduzca radio"
+                LEER radio;
+                area_circulo(radio)
+                ESCRIBIR "El area es: " + resultado
+            FIN_SI
+            SI opcion=2 ENTONCES 
+            ESCRIBIR "Introduzca base y altura"
+            LEER base, altura;
+            area_triangulo(base, altura)
+            ESCRIBIR "El area es: " + resultado
+            FIN_SI
+            SI opcion=3 ENTONCES 
+            ESCRIBIR "Introduzca diametro y altura"
+            LEER diametro, altura;
+            volumen_cilindro(diametro, altura)
+            ESCRIBIR "El volumen es: " + resultado
+            FIN_SI
+        FIN_FUNCION
+    tipo_figura(figura);
+Fin
+-----
+5. Elaborar un algoritmo que obtenga e imprima el valor de Y a partir de la ecuación: : Y=
+3*X + 2 + 7X – 15, introduciendo el valor que queramos de X.
+
+Inicio
+    ESCRIBIR "introduzca valor de x";
+    LEER x;
+    FUNCION resultado(x)
+        INICIO
+        resultado = (10*x) - 13;
+        ESCRIBIR "El valor de y es " + resultado;
+    FIN_FUNCION
+    resultado(x);
+Fin
+-----
+6. Pseudocódigo para introducir un número por teclado y que nos diga si es positivo o
+negativo
+Inicio
+    ESCRIBIR "Introduzca número";
+    LEER num;
+    FUNCION valor_absoluto(num)
+        INICIO
+            SI num >= 0 ENTONCES
+                ESCRIBIR "eL num es positivo";
+                ELSE "el num es negativo";
+            FIN_SI
+    FIN_FUNCION
+    valor_absoluto(num);
+Fin
+-----
+7. Realizar el pseudocódigo de un programa que permita saber si un número es mayor,
+menor o igual a cero.
+Inicio
+    ESCRIBIR "Introduzca número";
+    LEER num;
+    FUNCION valor_numero(n)
+        INICIO
+            SI n > 0 ENTONCES
+                ESCRIBIR "el numero es mayor";
+            FIN_SI
+            SI n < 0 ENTONCES
+                ESCRIBIR    "el numero es menor";
+            FIN_SI
+            SI n = 0 ENTONCES
+                ESCRIBIR "el numero es 0";
+            FIN_SI
+    FIN_FUNCION
+    valor_numero(num)
+Fin
+-----
+8. Crear un pseudocódigo que proporcione el precio medio de un producto, calculado a
+partir del precio del mismo en tres establecimientos distintos.
+
+Inicio
+    ESCRIBIR "Introduzca precios" ;
+    LEER p1,p2,p3;
+    FUNCION promedio(p1,p2,p3)
+        INICIO
+            resultado = (p1+p2+p3)/3;
+            resultado;
+    FIN_FUNCION
+    promedio(p1,p2,p3);
+Fin

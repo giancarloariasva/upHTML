@@ -1,0 +1,9 @@
+p{font-size: 32px;}
+
+.title-lg{font-size: 60px;}
+
+.title-lg:hover{
+    background-color: blue;
+}
+
+#btn-cancel{background-color: red;}

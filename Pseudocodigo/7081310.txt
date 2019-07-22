@@ -1,0 +1,14 @@
+3: Crea un programa que genere dos números al azar entre el 0 y el 100, y pida al usuario
+que calcule e introduzca su suma. Si la respuesta no es correcta, deberá volver a pedirla.
+
+INICIO
+    A <- RANDOM(0,100);
+    B <- RANDOM(0,100);
+    suma = A + B
+    ESCRIBIR "Calcule la suma de " + A + " y " + B;
+    LEER respuesta; //respuesta del usuario
+        Mientras respuesta <> suma HACER
+            ESCRIBIR "respuesta incorrecta, vuélvalo a intentar";
+            LEER suma;
+        FIN_MIENTRAS;
+FIN

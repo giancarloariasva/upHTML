@@ -1,0 +1,66 @@
+DO WHILE
+
+Ejemplo
+Un programa que pida al usuario una clave de acceso, y que no le permita
+seguir hasta que la introduzca correctamente.
+    Inicio
+        Repetir
+            Escribir "Dime tu clave de acceso";
+            Leer clave;
+                Si clave <> 1234 Entonces
+                Escribir "Clave incorrecta";
+                FinSi
+        Hasta clave=1234
+        Escribir "Bienvenido!";
+    Fin
+
+1: Crea un programa que pida al usuario un código de usuario y una contraseña. Deberá repetirse hasta que el código sea "1" y la contraseña sea "1234".
+
+Variables ; clave;
+
+Inicio
+    REPETIR
+        Escribir "Dime tu  código y clave de acceso";
+        Leer codigo, clave;
+        SI codigo <> 1 && Clave <> 1234;
+            ESCRIBIR "Clave incorrecta";
+        FINSI
+    HASTA codigo=1 && clave=1234;
+    ESCRIBIR "Contraseña Correcta. Bienvenido";
+Fin
+
+2: Haz un programa que permita calcular la suma de pares de números. Pedirá dos
+números al usuario y mostrará su suma, volviendo a repetir hasta que ambos números
+introducidos sean 0.
+
+Variables n1, n2;
+
+Inicio
+    REPETIR
+        ESCRIBIR "Dame dos números";
+        LEER n1, n2;
+        suma = n1 + n2;
+            SI n1 <> 0 && n2 <> 0;
+                ESCRIBIR suma = suma + n1 + n2;
+            FINSI
+    HASTA n1 = 0 && n2 = 0;
+    ESCRIBIR "La suma es: " + suma;
+Fin
+
+3: Prepara un programa que divida dos números que introduzca el usuario. Si el segundo
+número es cero, se le deberá avisar y volver a pedir tantas veces como sea necesario, hasta
+que introduzca un número distinto de cero, momento en que se calculará y mostrará.
+
+Variable numerica n1, n2;
+
+INICIO
+    ESCRIBIR "Dime dos numeros";
+    LEER n1;
+    REPETIR
+        LEER n2;
+        SI n2 = 0;
+            ESCRIBIR "Introduzca otro número";
+        FINSI
+        HASTA n2 != 0;
+        ESCRIBIR "El resultado es: " + n1/n2;
+FIN

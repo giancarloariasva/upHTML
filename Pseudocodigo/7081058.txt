@@ -1,0 +1,11 @@
+Variables Numericas; base, altura, area;
+
+Inicio
+    Escribir "Escriba la base del triángulo";
+    Leer base;
+    Escribir "Escriba la altura del triángulo";
+    Leer altura;
+    area = (base * altura)/2;
+    Escribir "el área del círculo es:";
+    Escribir area //nos muestra el area;
+Fin

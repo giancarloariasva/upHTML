@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica</title>
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Primera Practica</h1>
+    </header>
+    <article>
+        <input type="text" name="" id="inputText" value='valor por defecto'>
+        <section>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio accusamus a, laboriosam expedita similique quaerat fugiat fugit quis rerum ex itaque assumenda architecto soluta ut omnis temporibus. Sapiente, labore omnis?</section>
+        <section>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit enim neque recusandae. Culpa dignissimos assumenda error minima cumque quos nulla odio eos sint officiis, nostrum, aliquam voluptas consequatur laboriosam mollitia.</section>
+        <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quae illum commodi recusandae quia magnam iusto est provident eos voluptate! Perferendis assumenda laboriosam fugiat sapiente laudantium consequatur expedita explicabo delectus.</section>
+        <section>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, laborum. Sapiente illo quam excepturi eveniet placeat perferendis atque beatae dignissimos, veniam ex temporibus iusto aspernatur laboriosam molestiae quae dolore. Beatae.</section> 
+    </article>
+    <button onclick = "myFunction()">Click me
+    </button>
+    <p id="demo">esto cambia</p>
+    <footer id="footer">
+        <small>Este es el footer </small>
+    </footer>
+    <script>
+        var mih1 = document.getElementsByTagName('h1')[0]
+        mih1.onclick = function() {
+            mih1.innerText='me han pulsado'
+            //alert('has clickado')
+        }
+        console.log(mih1[0])
+        console.log(document.getElementsByTagName('section'))
+        var cabecera = document.getElementsByClassName('cabecera')
+        console.log(cabecera)
+        var footer = document.getElementById('footer')
+        console.log(footer)
+        var primeraSection=document.querySelector('section')
+        console.log(primeraSection)
+        var miSpan=document.querySelector('footer div span')
+        console.log(miSpan)
+        function myFunction() {
+            document.getElementById('demo').innerHTML='Hello compañero'
+        }
+        var sectionBro=document.querySelectorAll('section+section')
+        console.log(sectionBro)
+        var miInput = document.querySelector('#inputText')
+        console.log('esto es mi elemento' , miInput)
+        console.log('este es el valor que contiene' , miInput.value)
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{padding: 50px}
+        .rojo{background-color: red}
+        .azul{background-color: blue}
+        .verde{background-color: green}
+    </style>
+</head>
+<body>
+    <div class="rojo">
+        <div class="azul">
+            <div class="verde"></div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.verde').addEventListener('click',function (evento) {
+            evento.stopPropagation()
+            console.log('soy el verde')
+        })
+        document.querySelector('.azul').addEventListener('click',function (evento) {
+            evento.stopPropagation()
+            console.log('soy el azul')
+        })
+        document.querySelector('.rojo').addEventListener('click',function (evento) {
+            console.log('soy el rojo')
+        })
+    </script>
+</body>
+</html>
